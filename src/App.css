@@ -1,38 +1,74 @@
 .App {
   text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 50px;
+  background-color: #f8e1f4; /* Light pink background */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.weather-container {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+h1 {
+  font-size: 36px;
+  color: #d36fae; /* Pink color for the heading */
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 28px;
+  color: #d36fae; /* Pink color for the subheading */
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  color: #d36fae; /* Pink color for paragraph text */
+  margin: 5px 0;
+}
+
+input {
+  padding: 10px;
+  margin: 20px;
+  font-size: 16px;
+  border: 2px solid #d36fae; /* Pink border */
+  border-radius: 5px;
+  width: 200px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff69b4; /* Lighter pink on focus */
+}
+
+img {
+  margin-top: 20px;
+  width: 100px;
+}
+
+.loading {
+  font-size: 18px;
+  color: #ff69b4; /* Lighter pink for loading text */
+}
+
+.no-data {
+  font-size: 18px;
+  color: #d9534f; /* Red color for no data */
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .weather-container {
+    padding: 15px;
+    max-width: 100%;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  input {
+    width: 150px;
   }
 }
